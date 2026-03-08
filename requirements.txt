@@ -1,0 +1,5 @@
+fastapi==0.116.1        backend framework
+uvicorn==0.35.0         server that runs fastapi
+requests==2.32.5        package to call baseball data API
+
+ 
