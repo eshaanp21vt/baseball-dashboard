@@ -1,6 +1,7 @@
 # Baseball Dashboard
 
 A personal project to build a baseball analytics dashboard using a Python backend and a future React frontend.
+This project is currently a WIP and incomplete.
 
 ## Current Features
 - FastAPI backend
