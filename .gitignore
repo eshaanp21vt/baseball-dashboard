@@ -1,6 +1,15 @@
+# Backend
 __pycache__/
 *.pyc
+
+# Virtual Envs
 .venv/
 venv/
 .env
+# random
 gitkey.txt
+
+# Frontend / Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
