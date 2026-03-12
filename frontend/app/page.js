@@ -5,17 +5,17 @@ export default function Home() {
   const games = [
     {
     id: 1,
-    awayTeam: "Yankees ",
+    awayTeam: "Yankees",
     awayScore: 4,
-    homeTeam: "Red Sox ",
+    homeTeam: "Red Sox",
     homeScore: 5,
     status: "Live",
     },
     {
       id: 2,
-      awayTeam: "Giants ",
+      awayTeam: "Giants",
       awayScore: "-",
-      homeTeam: "Dodgers ",
+      homeTeam: "Dodgers",
       homeScore: "-",
       status: "9:00 PM EST",
     },
@@ -33,7 +33,7 @@ export default function Home() {
         
         <section className={styles.gamesSection}>
           {games.length === 0 ? (
-            <p>No Games Today</p>
+            <p>No games today.</p>
           ):(
             games.map((game, index) => (
               <div key={index} className={styles.gameCard}>
@@ -45,9 +45,7 @@ export default function Home() {
                   <span>{game.homeTeam}</span>
                   <span>{game.homeScore}</span>
                 </div>
-                <p className = {styles.gameStatus}>
-                  <span>{game.status}</span>
-                </p>
+                <p className={styles.gameStatus}>{game.status}</p>
               </div>
             ))
           )}
