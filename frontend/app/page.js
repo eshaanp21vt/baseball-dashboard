@@ -17,7 +17,7 @@ export default function Home() {
       awayScore: "-",
       homeTeam: "Dodgers",
       homeScore: "-",
-      status: "9:00 PM EST",
+      status: "12:00 PM EST",
     },
   ]
 

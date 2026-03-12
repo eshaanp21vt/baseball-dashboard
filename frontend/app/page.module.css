@@ -139,3 +139,47 @@ a.secondary {
     --button-secondary-border: #1a1a1a;
   }
 }
+
+
+.header {
+  /* There is no need for any padding for some reason there is already 
+  a gap between the header and the rest. Also not sure if padding or margin
+  is better*/
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+
+.header h1 {
+  font-weight: bolder;
+  /*I want to make color dependent on users favorite team in the future.
+  Do not remove this comment until that is done.*/
+  color: orangered;
+  /*I want a blockier font for the title. Not sure what to use.*/
+}
+
+.header p {
+  font-weight: lighter;
+  color: black;
+}
+
+.gamesSection {
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+.gameCard {
+  
+  padding: 5px 5px 10px 5px;
+  border: 1px solid black;
+  border-top: solid transparent;
+}
+
+.teamRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gameStatus {
+  font-weight: 500;
+}
