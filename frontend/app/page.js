@@ -1,25 +1,29 @@
+"use client";
 import styles from "./page.module.css";
-
+import { useState, useEffect } from "react";
 export default function Home() {
 
-  const games = [
-    {
-    id: 1,
-    awayTeam: "Yankees",
-    awayScore: 4,
-    homeTeam: "Red Sox",
-    homeScore: 5,
-    status: "Live",
-    },
-    {
-      id: 2,
-      awayTeam: "Giants",
-      awayScore: "-",
-      homeTeam: "Dodgers",
-      homeScore: "-",
-      status: "12:00 PM EST",
-    },
-  ]
+  const [games, setGames] = 
+  useState([
+    // {
+    //   id: 1,
+    //   awayTeam: "Yankees",
+    //   awayScore: 4,
+    //   homeTeam: "Red Sox",
+    //   homeScore: 5,
+    //   status: "Live",
+    // },
+    // {
+    //   id: 2,
+    //   awayTeam: "Giants",
+    //   awayScore: "-",
+    //   homeTeam: "Dodgers",
+    //   homeScore: "-",
+    //   status: "12:00 PM EST",
+    // },
+  ])
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   return (
     <div className={styles.page}>
